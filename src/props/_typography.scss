@@ -1,0 +1,61 @@
+@use 'colors';
+
+.heading-40{
+    font-weight: bolder;
+    font-size: 40px;
+    line-height: 150%;
+    color: colors.$black;
+}
+
+.heading-32{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%;
+    color: colors.$black;
+}
+
+.heading-24{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    color: colors.$black;
+}
+
+.heading-20{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: colors.$black;
+}
+
+.heading-18{
+    font-weight: 500;
+    font-size: 18px;
+    color: colors.$black;
+    line-height: 150%;
+}
+
+.heading-16, .caption-16{
+    font-size: 16px;
+    line-height: 150%;
+    color: colors.$dark-gray;
+}
+
+.heading-16{
+    color: colors.$black;
+    font-weight: 600;
+}
+
+
+.caption-14{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.caption-12{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+    color: colors.$dark-gray;
+}
