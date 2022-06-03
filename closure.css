@@ -9,6 +9,8 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 :focus {
@@ -654,12 +656,18 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 150%;
+  color: #575860;
 }
 
 .caption-12 {
   font-weight: 500;
   font-size: 12px;
   line-height: 150%;
+  color: #575860;
+}
+
+.regular {
+  font-weight: 400;
   color: #575860;
 }
 
@@ -703,4 +711,64 @@ body {
 }
 .button-tertiary:hover, button-tertiary:hover {
   background-color: #f6f6f6;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(87, 88, 96, 0.8);
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.modal .modal-container {
+  position: inherit;
+  width: 480px;
+  background-color: #FAFAFA;
+  padding: 1.5em;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.modal .modal-container .modal-header {
+  border-bottom: 1px solid #E9E9E9;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  position: relative;
+}
+.modal .modal-container .modal-header span {
+  display: block;
+}
+.modal .modal-container .modal-header .close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 18px;
+  color: #575860;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.modal .modal-container .modal-header .close-button:hover {
+  color: #292829;
+}
+.modal .modal-container .modal-footer {
+  border-top: 1px solid #E9E9E9;
+  padding-top: 1em;
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
